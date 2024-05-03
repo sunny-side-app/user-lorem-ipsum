@@ -38,6 +38,7 @@ $users = RandomGenerator::users($min, $max);
     <?php foreach ($users as $user): ?>
     <div class="user-card">
         <!-- ユーザー情報の表示 -->
+        <?= $user->toHTML() ?>
     </div>
     <?php endforeach; ?>
 
